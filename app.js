@@ -42,7 +42,7 @@ mongoose
 
 //routes
 
-app.use('/', indexRouter);
+app.use('/api', indexRouter);
 app.get('/addTestData', (req, res, next) => {
 	console.log('Add test db data');
 	const newBuild = new Build({
